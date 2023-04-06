@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TableViewCellModelType: class {
+protocol TableViewCellModelType: AnyObject {
     var fullName: String { get }
     var age: String { get }
 }

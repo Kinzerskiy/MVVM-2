@@ -10,6 +10,7 @@ import Foundation
 class DetailViewModel: DetailViewModelType {
     
     private var profile: Profile
+    var age: Box<String?> = Box(value: nil)
     
     var description: String {
         return String(describing: "\(profile.name) \(profile.secondName) is \(profile.age) age old!")
